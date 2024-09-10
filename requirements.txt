@@ -12,3 +12,4 @@ typing_extensions
 tzdata
 urllib3
 whitenoise
+dj_database_url
