@@ -71,13 +71,13 @@ WSGI_APPLICATION = 'mental_health_tracker.wsgi.application'
 
 
 # Database
-# https://docs.djangoproject.com/en/5.1/ref/settings/#databases
+# https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
+    'default': dj_database_url.config(
+        default='postgres://postgres:cNMETlveMadJIHhYJxuOgJObpHTOemjA@junction.proxy.rlwy.net:11385/railway',
+        conn_max_age=600,
+    )
 }
 
 

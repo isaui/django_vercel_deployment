@@ -1,6 +1,15 @@
-django
+asgiref
+certifi
+charset_normalizer
+Django
 gunicorn
-whitenoise
+idna
+packaging
 psycopg2-binary
 requests
+sqlparse
+typing_extensions
+tzdata
 urllib3
+whitenoise
+dj_database_url
